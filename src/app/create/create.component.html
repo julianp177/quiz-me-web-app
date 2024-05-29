@@ -1,0 +1,127 @@
+<main style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: white">
+  <div class="ms-3 row">
+    <h2>Karteikartenset hinzufügen</h2>
+  </div>
+  <div class="ms-3 row my-2">
+    <input class="col-5 searchBox ms-2" type="text" placeholder="Namen von Karteikartenset">
+  </div>
+  <div class="ms-3 row my-2 col-2">
+    <button class="btn btn-success" style="" disabled>
+      HINZUFÜGEN
+    </button>
+  </div>
+  <hr>
+  <div class="ms-3 row">
+    <h2>Karteikarte hinzufügen</h2>
+  </div>
+  <div class="ms-3 row my-2 mb-4">
+    <input class="col-6 searchBox ms-2" type="text" placeholder="Frage der Karteikarte">
+  </div>
+  <div class="ms-3 row my-2">
+    <input class="col-9 searchBox ms-2" type="text" placeholder="Antwortmöglichkeit 1">
+    <div class="col-3 form-check large-switch ms-2 d-flex justify-content-start align-items-center">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+      <div class="ms-2">
+        Richtig
+      </div>
+    </div>
+
+  </div>
+  <div class="ms-3 row my-2">
+    <input class="col-9 searchBox ms-2" type="text" placeholder="Antwortmöglichkeit 2">
+    <div class="col-1 form-check large-switch ms-2 d-flex justify-content-start align-items-center">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+      <div class="ms-2">
+        Richtig
+      </div>
+    </div>
+  </div>
+  <div class="ms-3 row my-2">
+    <input class="col-9 searchBox ms-2" type="text" placeholder="Antwortmöglichkeit 3">
+    <div class="col-1 form-check large-switch ms-2 d-flex justify-content-start align-items-center">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+      <div class="ms-2">
+        Richtig
+      </div>
+    </div>
+  </div>
+  <div class="ms-3 row my-2">
+    <input class="col-9 searchBox ms-2" type="text" placeholder="Antwortmöglichkeit 4">
+    <div class="col-1 form-check large-switch ms-2 d-flex justify-content-start align-items-center">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+      <div class="ms-2">
+        Richtig
+      </div>
+    </div>
+  </div>
+  <div class="p-3 row mx-3">
+    <div class="form-check form-switch">
+      <input class="form-check-input large-switch me-1" type="checkbox" role="switch" id="flexSwitchCheckEmail" disabled>
+      <label class="form-check-label" for="flexSwitchCheckEmail"><h4 style="margin-bottom: 0">Private</h4></label>
+    </div>
+    <div class="mx-4">
+      <p style="margin-bottom: 0">Die Karteikarte wird nicht öffentlich zur Verfügung gestellt</p>
+    </div>
+  </div>
+  <div class="ms-3 row my-2">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle col-4" style="background-color: white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Karteikartenset auswählen
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ms-3 row my-2 col-2">
+    <button class="btn btn-success" style="" disabled>
+      HINZUFÜGEN
+    </button>
+  </div>
+  <hr>
+  <div class="ms-3 row">
+    <h2>Karteikarten bearbeiten</h2>
+  </div>
+  <div class="ms-3 row my-2">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle col-4" style="background-color: white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Karteikartenset auswählen
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="ms-3 row my-2" style="color:black">
+    <div class="col-10 d-flex p-2 box my-1">
+      Hier steht dann die Frage der Karteikarte<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" (click)="editCard()" width="24" height="24" fill="currentColor" class="ms-2 bi bi-pencil-square" viewBox="0 0 16 16">
+      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+    </svg>
+    </div>
+    <div class="col-10 d-flex p-2 box my-1">
+      Hier steht dann die Frage der Karteikarte<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" (click)="editCard()" width="24" height="24" fill="currentColor" class="ms-2 bi bi-pencil-square" viewBox="0 0 16 16">
+      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+    </svg>
+    </div>
+    <div class="col-10 d-flex p-2 box my-1">
+      Hier steht dann die Frage der Karteikarte<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" (click)="editCard()" width="24" height="24" fill="currentColor" class="ms-2 bi bi-pencil-square" viewBox="0 0 16 16">
+      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+    </svg>
+    </div>
+    <div class="col-10 d-flex p-2 box my-1">
+      Hier steht dann die Frage der Karteikarte<svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" (click)="editCard()" width="24" height="24" fill="currentColor" class="ms-2 bi bi-pencil-square" viewBox="0 0 16 16">
+      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+    </svg>
+    </div>
+  </div>
+  <hr>
+</main>

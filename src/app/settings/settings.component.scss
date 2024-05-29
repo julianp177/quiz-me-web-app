@@ -1,0 +1,11 @@
+.large-switch {
+  cursor: pointer;
+  height: 1.3em; /* Höhe des Schalters */
+  width: 2.8em;  /* Breite des Schalters */
+}
+
+/* Stil für den Griff/Knopf des Schalters */
+.form-check-input::before {
+  height: 1.5em; /* Höhe des Griffs */
+  width: 1.5em;  /* Breite des Griffs */
+}

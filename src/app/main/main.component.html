@@ -1,0 +1,118 @@
+<main *ngIf="quizMode" style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: black">
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-12 quizBox">
+      <h1>Wo kommt die Qualitätssicherung von Anforderungen zum Einsatz und was ist ihr Ziel?</h1>
+    </div>
+  </div>
+  <div class="p-3 row my-4 ms-5 me-5">
+    <div class="container-fluid p-0 position-relative">
+      <div class="row g-0 full-height">
+        <div
+          class="col quizBox m-2 p-5"
+          style="cursor: pointer;"
+          (mouseenter)="hoverAnswer(1)"
+          (mouseleave)="hoverAnswer(999)"
+          (click)="checkAnswer(1)"
+          [ngClass]="{
+          'hoveredAnswer':hoveredAnswer===1,
+          'correct':successAnswer===1,
+          'wrong':dangerAnswer===1,
+          'questionAnswered':questionAnswered<999}">
+          <h2 *ngIf="questionAnswered!=1">In Kernaktivität Prüfen und Abstimmen aus Requirements Engineering und das Ziel ist die Freigabe der Anforderungen</h2>
+          <div *ngIf="questionAnswered===1" class="col d-flex flex-column justify-content-center align-items-center">
+            <svg *ngIf="successAnswer===1" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+            <svg *ngIf="dangerAnswer===1" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="col quizBox m-2 p-5"
+          style="cursor: pointer"
+          (mouseenter)="hoverAnswer(2)"
+          (mouseleave)="hoverAnswer(999)"
+          (click)="checkAnswer(2)"
+          [ngClass]="{
+          'hoveredAnswer':hoveredAnswer===2,
+          'correct':successAnswer===2,
+          'wrong':dangerAnswer===2,
+          'questionAnswered':questionAnswered<999}">
+          <h2 *ngIf="questionAnswered!=2">Sie kommt bei Softwareentwicklungen jeglicher Art zum Einsatz und das Ziel ist die genaue Überwachung</h2>
+          <div *ngIf="questionAnswered===2" class="col d-flex flex-column justify-content-center align-items-center">
+            <svg *ngIf="successAnswer===2" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+            <svg *ngIf="dangerAnswer===2" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 full-height">
+        <div
+          class="col quizBox m-2 p-5"
+          style="cursor: pointer"
+          (mouseenter)="hoverAnswer(3)"
+          (mouseleave)="hoverAnswer(999)"
+          (click)="checkAnswer(3)"
+          [ngClass]="{
+          'hoveredAnswer':hoveredAnswer===3,
+          'correct':successAnswer===3,
+          'wrong':dangerAnswer===3,
+          'questionAnswered':questionAnswered<999}">
+          <h2 *ngIf="questionAnswered!=3">In manchen Branchen der Industrie verwendet man sie und das Ziel ist eine höhere Produktivität</h2>
+          <div *ngIf="questionAnswered===3" class="col d-flex flex-column justify-content-center align-items-center">
+            <svg *ngIf="successAnswer===3" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+            <svg *ngIf="dangerAnswer===3" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="col quizBox m-2 p-5"
+          style="cursor: pointer"
+          (mouseenter)="hoverAnswer(4)"
+          (mouseleave)="hoverAnswer(999)"
+          (click)="checkAnswer(4)"
+          [ngClass]="{
+          'hoveredAnswer':hoveredAnswer===4,
+          'correct':successAnswer===4,
+          'wrong':dangerAnswer===4,
+          'questionAnswered':questionAnswered<999}">
+          <h2 *ngIf="questionAnswered!=4">Nur bei den Teilprozessen kommt sie zum Einsatz. Das Ziel ändert sich je nach Prozess</h2>
+          <div *ngIf="questionAnswered===4" class="col d-flex flex-column justify-content-center align-items-center">
+            <svg *ngIf="successAnswer===4" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+            <svg *ngIf="dangerAnswer===4" xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-4 ms-5 me-5 flex-row">
+    <div class="col-3">
+      <button *ngIf="questionAnswered!=999" class="btn m-2" style="background-color: white;font-weight: bold">
+        NÄCHSTE FRAGE
+      </button>
+    </div>
+    <div class="col-3 d-flex flex-row justify-content-end align-items-end" style="cursor: pointer;">
+      <svg *ngIf="questionAnswered!=999" style="color: greenyellow" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+      </svg>
+    </div>
+    <div class="col-3 d-flex flex-row justify-content-start align-items-start" style="cursor: pointer;">
+      <svg *ngIf="questionAnswered!=999" style="color:red" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
+        <path d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.38 1.38 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51q.205.03.443.051c.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.9 1.9 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.856 0-.29-.036-.586-.113-.857a2 2 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.2 3.2 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28H8c-.605 0-1.07.08-1.466.217a4.8 4.8 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591"/>
+      </svg>
+    </div>
+  </div>
+  <hr>
+</main>
+<app-result *ngIf="!quizMode"></app-result>

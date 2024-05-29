@@ -1,0 +1,95 @@
+<main style="font-family: AndroidAssassin,serif;font-size: 24px;height:100vh">
+  <div class="p-1 sidebar" >
+    <div>
+      <a routerLink="/start" style="cursor: pointer;">
+        <div class="col d-flex flex-row justify-content-center align-items-center p-2 position-sticky">
+          <img src="assets/mini_logo.png" alt="Logo" height="120px" width="120px">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="my-5 pe-4">
+    <ul class="nav nav-pills flex-column mb-auto mt-auto">
+      <div>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(1)"
+             (mouseleave)="toggleHover(1)"
+             [ngClass]="{'hover':hovered===1}"
+             routerLink="/start"
+             style="cursor: pointer">
+            START
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(2)"
+             (mouseleave)="toggleHover(2)"
+             [ngClass]="{'hover':hovered===2}"
+             routerLink="/profile"
+             style="cursor: pointer">
+            PROFIL
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(3)"
+             (mouseleave)="toggleHover(3)"
+             [ngClass]="{'hover':hovered===3}"
+             routerLink="/learn"
+             style="cursor: pointer">
+            LERNEN
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(4)"
+             (mouseleave)="toggleHover(4)"
+             [ngClass]="{'hover':hovered===4}"
+             routerLink="/stats"
+             style="cursor: pointer">
+            STATISTIK
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(5)"
+             (mouseleave)="toggleHover(5)"
+             [ngClass]="{'hover':hovered===5}"
+             routerLink="/question-pool"
+             style="cursor: pointer">
+            FRAGENPOOL
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(6)"
+             (mouseleave)="toggleHover(6)"
+             [ngClass]="{'hover':hovered===6}"
+             routerLink="/create"
+             style="cursor: pointer">
+            ERSTELLEN
+          </a>
+        </li>
+        <li>
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-center"
+             (mouseenter)="toggleHover(7)"
+             (mouseleave)="toggleHover(7)"
+             [ngClass]="{'hover':hovered===7}"
+             routerLink="/howto"
+             style="cursor: pointer">
+            ANLEITUNG
+          </a>
+        </li>
+        <li style="color:#212529">
+          <a class="nav-link text-light pt-2 d-flex justify-content-between align-items-end invisible">
+            PLACEHOLDEEER
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</main>
+
+
+

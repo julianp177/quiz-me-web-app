@@ -1,0 +1,63 @@
+<main style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: white">
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-12 quizBox">
+      <h1>Ergebnis Auswertung</h1>
+    </div>
+  </div>
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-2">
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-end align-items-end">
+      <img src="assets/profile.jpg" alt="" height="150" width="150">
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-start align-items-start">
+      <img src="assets/profile2.jpg" alt="" height="150" width="150">
+    </div>
+  </div>
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-2">
+      <h5 style="margin-bottom: 0">Richtige Antworten</h5>
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-end align-items-end">
+      <div class="col-{{myPoints+2}} d-flex flex-row justify-content-end align-items-end quizBox">
+        <h4 class="me-1" style="margin-bottom: 0;font-weight: bold;text-align: end !important;">{{myPoints}}/10</h4>
+      </div>
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-start align-items-start">
+      <div class="col-{{otherPoints+2}} quizBox">
+        <h4 style="margin-bottom: 0;font-weight: bold">{{otherPoints}}/10</h4>
+      </div>
+    </div>
+  </div>
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-2">
+      <h5 style="margin-bottom: 0">Gesamtpunktzahl</h5>
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-end align-items-end">
+      <h3 style="margin-bottom: 0;font-weight: bold">12</h3>
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-start align-items-start">
+      <h3 style="margin-bottom: 0;font-weight: bold">8</h3>
+    </div>
+  </div>
+  <div class="p-3 row ms-5 me-5">
+    <h2 *ngIf="myPoints>8">Perfekt! Besser geht es nicht :-)</h2>
+    <h2 *ngIf="myPoints>6&&myPoints<=8">Sehr gut! Mach genau so weiter :-)</h2>
+    <h2 *ngIf="myPoints>4&&myPoints<=6">Guter Versuch! Nächstes Mal wird es besser!</h2>
+    <h2 *ngIf="myPoints>2&&myPoints<=4">Schade! Das ist leider nicht so gut gelaufen :-(</h2>
+    <h2 *ngIf="myPoints>=0&&myPoints<=2">Oh man! Das war leider gar nichts :-(</h2>
+  </div>
+  <hr>
+  <div class="p-3 row ms-5 me-5">
+    <div class="col-2">
+      <button class="btn" style="background-color: white;font-weight: bold;color: black">
+        NÄCHSTE PARTIE
+      </button>
+    </div>
+    <div class="col-2">
+      <button class="btn" style="background-color: white;font-weight: bold;color: black">
+        ZURÜCK
+      </button>
+    </div>
+  </div>
+</main>

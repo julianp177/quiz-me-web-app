@@ -1,0 +1,26 @@
+
+.main-body {
+  background-image: url('../../assets/login_background.jpg');
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Optional: Fix the background relative to the viewport */
+  display: flex;
+  justify-content: center; /* Zentriert horizontal */
+  align-items: center; /* Zentriert vertikal */
+  height: 100vh; /* Vollständige Höhe des Viewports */
+}
+.container {
+  width: 100%; /* Nimmt die volle Breite des Elternelements ein */
+  max-width: 800px; /* Maximale Breite für größere Bildschirme */
+  background-color: rgba(255, 255, 255, 0.8); /* Beispiel für einen leichten transparenten Hintergrund */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten für bessere Sichtbarkeit */
+  padding: 20px; /* Innenabstand */
+  border-radius: 20px; /* Abgerundete Ecken */
+  height: 40vh; /* 50% der Ansichtshöhe */
+}
+.btn-outline-light {
+  background-color: #426e5e;
+}
+input {
+}

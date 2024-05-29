@@ -1,0 +1,109 @@
+<main style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: white">
+  <div class="p-3 row">
+    <div class="col-2 d-flex flex-column m-1 p-4">
+      <img src="assets/profile.jpg" alt="" height="200px" width="200px">
+    </div>
+    <div class="col-6 d-flex flex-column m-1 p-4">
+      <h1>MAX MUSTERMANN</h1>
+      <h4>Studiengang: Wirtschaftsinformatik</h4>
+      <div class="col-4">
+        <h6>Beantwortete Karteikarten: 120</h6>
+        <h6>Gewonnene Duelle: 46</h6>
+      </div>
+      <div *ngIf="!isFriend" class="col d-flex flex-column justify-content-end align-items-start">
+        <button class="btn btn-success" (click)="addFriend('5')">
+          <p style="margin-bottom: 0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+          </svg> HINZUFÜGEN</p>
+        </button>
+      </div>
+      <div *ngIf="isFriend" class="col d-flex flex-column justify-content-end align-items-start">
+        <button class="btn btn-danger" (click)="isFriend=false">
+          <p style="margin-bottom: 0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1"/>
+          </svg> ENTFERNEN</p>
+        </button>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="ms-3 row">
+    <h2>Karteikartensets</h2>
+  </div>
+  <div class="ms-3 row" style="color: black">
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif">BWL Grundlagen</h3>
+      <p>23 Karteikarten</p>
+      <div class="col d-flex flex-column justify-content-end">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          STARTEN
+        </button>
+      </div>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif">Statistik</h3>
+      <p>44 Karteikarten</p>
+      <div class="col d-flex flex-column justify-content-end">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          STARTEN
+        </button>
+      </div>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif">Java EE Programmierung</h3>
+      <p>65 Karteikarten</p>
+      <div class="col d-flex flex-column justify-content-end">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          STARTEN
+        </button>
+      </div>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif">Organizational Behavior</h3>
+      <p>12 Karteikarten</p>
+      <div class="col d-flex flex-column justify-content-end">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          STARTEN
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="ms-3 row">
+    <h2>Freunde</h2>
+  </div>
+  <div class="ms-3 row">
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile2.jpg" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/user-logo.png" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg3" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg4" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/user-logo.png" alt="">
+    </div>
+  </div>
+  <hr>
+  <div *ngIf="isFriend">
+    <div class="ms-3 row">
+      <h2>Spielstand gegen Dich</h2>
+    </div>
+    <div class="ms-3 row">
+      <div class="col-1 d-flex flex-column box p-4 mx-2">
+        <img src="assets/profile.jpg" alt="">
+      </div>
+      <div class="col-1 d-flex flex-column p-4 mx-2">
+        <h1 style="margin-bottom: 0">8 : 2</h1>
+      </div>
+      <div class="col-1 d-flex flex-column box p-4 mx-2">
+        <img src="assets/profile3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</main>

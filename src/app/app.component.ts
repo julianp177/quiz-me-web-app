@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {StorageService} from "./services/storage.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quiz-web-app';
+  constructor(public storageService: StorageService, private router: Router) {
+  }
+  ngOnInit() {
+  }
 }

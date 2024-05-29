@@ -1,0 +1,27 @@
+.box{
+  border-radius: 20px;
+  background-color: white;
+}
+.quizBox{
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  color: black;
+  font-size: 24px;
+}
+.full-height {
+  height: 40vh; /* 100% of the viewport height */
+}
+.hoveredAnswer {
+  background-color: lightgrey;
+}
+.correct {
+  background-color: limegreen;
+  cursor: default;
+}
+.wrong {
+  background-color: red;
+}
+.questionAnswered {
+  cursor: default !important;
+}

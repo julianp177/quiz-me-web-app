@@ -1,0 +1,29 @@
+<main style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: white">
+  <div class="ms-3 row">
+    <h2>FRAGENPOOL</h2>
+  </div>
+  <div class="ms-3 row my-4">
+    <input class="col-9 searchBox ms-2" type="text" placeholder="Nach Name von Karteikartenset oder Nutzer suchen">
+    <div class="col-1">
+      <svg style="cursor:pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+    </div>
+  </div>
+  <div class="ms-3 row" style="color: black">
+    <div *ngFor="let set of sets; index as i" class="col-2 d-flex flex-column box p-4 mx-2 my-2">
+      <h3 style="font-family: AndroidAssassin,serif">BWL Grundlagen</h3>
+      <p><img src="assets/profile.jpg" alt="" width="40" height="40"> 23 Karteikarten</p>
+      <div class="col d-flex flex-column justify-content-end my-2">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          ANSEHEN
+        </button>
+      </div>
+      <div class="col d-flex flex-column justify-content-end">
+        <button class="btn" style="background-color: #426e5e;color: white">
+          DUELL STARTEN
+        </button>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,77 @@
+<main style="background-color: #426e5e;font-family: AndroidAssassin,serif;color: white">
+  <div class="ms-3 row">
+    <h2>Laufende Spiele</h2>
+  </div>
+  <div class="ms-3 row" style="color: black">
+    <div class="col-2 d-flex flex-column align-items-center box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="" height="100px" width="100px" class="mb-2">
+      <h6 style="font-family: AndroidAssassin,serif;text-align: center">Statistik</h6>
+      <button class="btn" style="background-color: #426e5e;color: white" routerLink="/play">
+        WEITER
+      </button>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="" height="100px" width="100px" class="mb-2">
+      <h6 style="font-family: AndroidAssassin,serif;text-align: center">BWL Grundlagen</h6>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        WEITER
+      </button>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="" height="100px" width="100px" class="mb-2">
+      <h6 style="font-family: AndroidAssassin,serif;text-align: center">Java EE Programmierung</h6>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        WEITER
+      </button>
+    </div>
+  </div>
+  <hr>
+  <div class="ms-3 row">
+    <h2>Neues Spiel</h2>
+  </div>
+  <div *ngIf="!friendChosen" class="ms-3 row">
+    <p>Wähle einen Freund aus und anschließend das gewünschte Karteikartenset</p>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="" (click)="friendChosen=true" style="cursor: pointer">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="">
+    </div>
+    <div class="col-1 d-flex flex-column box p-4 mx-2">
+      <img src="assets/profile.jpg" alt="">
+    </div>
+  </div>
+  <div *ngIf="friendChosen" class="ms-3 row" style="color: white">
+    <p>Bitte jetzt das gewünschte eigene Karteikartenset auswählen</p>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif;text-align: center;color:black">Statistik</h3>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        STARTEN
+      </button>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif;text-align: center;color:black">BWL Grundlagen</h3>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        STARTEN
+      </button>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif;text-align: center;color:black">Java EE Programmierung</h3>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        STARTEN
+      </button>
+    </div>
+    <div class="col-2 d-flex flex-column box p-4 mx-2">
+      <h3 style="font-family: AndroidAssassin,serif;text-align: center;color:black">Mathematik</h3>
+      <button class="btn" style="background-color: #426e5e;color: white">
+        STARTEN
+      </button>
+    </div>
+  </div>
+</main>
